@@ -1,22 +1,25 @@
-BOT_TOKEN: str = ""
+BOT_TOKEN: str = "OTY0OTkzNjk3OTY2MDYzNjU2.Ylsuag._qhlYAGGcmx0__UHbM7i3I1SAhw"
 SPOTIFY_ID: str = ""
 SPOTIFY_SECRET: str = ""
 
 BOT_PREFIX = "$"
 
-EMBED_COLOR = 0x4dd4d0  #replace after'0x' with desired hex code ex. '#ff0188' >> '0xff0188'
+# replace after'0x' with desired hex code ex. '#ff0188' >> '0xff0188'
+EMBED_COLOR = 0x4dd4d0
 
-SUPPORTED_EXTENSIONS = ('.webm', '.mp4', '.mp3', '.avi', '.wav', '.m4v', '.ogg', '.mov')
+SUPPORTED_EXTENSIONS = ('.webm', '.mp4', '.mp3', '.avi',
+                        '.wav', '.m4v', '.ogg', '.mov')
 
-MAX_SONG_PRELOAD = 5  #maximum of 25
+MAX_SONG_PRELOAD = 5  # maximum of 25
 
 COOKIE_PATH = "/config/cookies/cookies.txt"
 
 GLOBAL_DISABLE_AUTOJOIN_VC = False
 
-VC_TIMEOUT = 600 #seconds
-VC_TIMOUT_DEFAULT = True  #default template setting for VC timeout true= yes, timeout false= no timeout
-ALLOW_VC_TIMEOUT_EDIT = True  #allow or disallow editing the vc_timeout guild setting
+VC_TIMEOUT = 600  # seconds
+# default template setting for VC timeout true= yes, timeout false= no timeout
+VC_TIMOUT_DEFAULT = True
+ALLOW_VC_TIMEOUT_EDIT = True  # allow or disallow editing the vc_timeout guild setting
 
 
 STARTUP_MESSAGE = "Starting Bot..."
@@ -31,7 +34,8 @@ CHANNEL_NOT_FOUND_MESSAGE = "Error: Could not find channel"
 DEFAULT_CHANNEL_JOIN_FAILED = "Error: Could not join the default voice channel"
 INVALID_INVITE_MESSAGE = "Error: Invalid invitation link"
 
-ADD_MESSAGE= "To add this bot to your own Server, click [here]" #brackets will be the link text
+# brackets will be the link text
+ADD_MESSAGE = "To add this bot to your own Server, click [here]"
 
 INFO_HISTORY_TITLE = "Songs Played:"
 MAX_HISTORY_LENGTH = 10
@@ -57,10 +61,12 @@ HELP_DISCONNECT_SHORT = "Disonnect bot from voicechannel"
 HELP_DISCONNECT_LONG = "Disconnect the bot from the voice channel and stop audio."
 
 HELP_SETTINGS_SHORT = "View and set bot settings"
-HELP_SETTINGS_LONG = "View and set bot settings in the server. Usage: {}settings setting_name value".format(BOT_PREFIX)
+HELP_SETTINGS_LONG = "View and set bot settings in the server. Usage: {}settings setting_name value".format(
+    BOT_PREFIX)
 
 HELP_HISTORY_SHORT = "Show history of songs"
-HELP_HISTORY_LONG = "Shows the " + str(MAX_TRACKNAME_HISTORY_LENGTH) + " last played songs."
+HELP_HISTORY_LONG = "Shows the " + \
+    str(MAX_TRACKNAME_HISTORY_LENGTH) + " last played songs."
 HELP_PAUSE_SHORT = "Pause Music"
 HELP_PAUSE_LONG = "Pauses the AudioPlayer. Playback can be continued with the resume command."
 HELP_VOL_SHORT = "Change volume %"
@@ -78,7 +84,8 @@ HELP_STOP_LONG = "Stops the AudioPlayer and clears the songqueue"
 HELP_MOVE_LONG = f"{BOT_PREFIX}move [position] [new position]"
 HELP_MOVE_SHORT = 'Moves a track in the queue'
 HELP_YT_SHORT = "Play a supported link or search on youtube"
-HELP_YT_LONG = ("$p [link/video title/key words/playlist-link/soundcloud link/spotify link/bandcamp link/twitter link]")
+HELP_YT_LONG = (
+    "$p [link/video title/key words/playlist-link/soundcloud link/spotify link/bandcamp link/twitter link]")
 HELP_PING_SHORT = "Pong"
 HELP_PING_LONG = "Test bot response status"
 HELP_CLEAR_SHORT = "Clear the queue."
@@ -92,4 +99,4 @@ HELP_SHUFFLE_LONG = "Randomly sort the songs in the current queue"
 HELP_CHANGECHANNEL_SHORT = "Change the bot channel"
 HELP_CHANGECHANNEL_LONG = "Change the bot channel to the VC you are in"
 
-ABSOLUTE_PATH = '' #do not modify
+ABSOLUTE_PATH = ''  # do not modify
